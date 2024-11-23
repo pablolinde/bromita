@@ -1,12 +1,12 @@
-El programa esta pensado meramente para adquirir conocimiento sobre el funcionamiento del sistema operativo windows, 
+El programa está pensado meramente para adquirir conocimiento sobre el funcionamiento del sistema operativo windows, 
 en ningun momento se planea hacer un uso malintencionado del mismo ni el "virus" está diseñado para hacer daño a ningun usuario.
 
-Quienes lo descargen serán responsables de lo que hagan con el.
+Quienes lo descargen serán responsables de lo que hagan con él.
 
 El código en bromita.py crea una carpeta oculta en el directorio usuario donde instalará UpdaterService.exe, el ejecutable que ha de crearse
 a partir del .py con el mismo nombre. Este otro código es la broma en sí misma, cada tres segundos mostrará una imagen por pantalla acompañada de un audio.
 UpdaterService.exe se ejecutará únicamente tras cada inicio de sesión.
-El programa se detendrá al crear un txt llamado byefrog en el directorio usuario. 
+El programa se detendrá al crear un txt llamado byefrog en el directorio usuario (y no funcionará mientras este exista) o bien finalizando el proceso UpdaterService en el administrador de tareas. 
 Para eliminarlo definitivamente hay que acceder al programador de tareas y borrar la tarea programada llamada UpdaterService, 
 también buscar la carpeta oculta en el directorio usuario llamada ansel y eliminarla.
 
